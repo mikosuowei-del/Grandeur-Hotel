@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Events — The Grandeur Hotel</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <header class="header" role="banner">
+    <div class="nav-inner">
+      <a href="index.html" class="logo" aria-label="The Grandeur Hotel home">
+        THE GRANDEUR
+      </a>
+      <nav role="navigation">
+        <div class="nav-links">
+          <a href="index.html">HOME</a>
+          <a href="rooms.html">ROOMS & SUITES</a>
+          <a href="dining.html">DINING</a>
+          <a href="amenities.html">AMENITIES</a>
+          <a href="events.html" class="cta">EVENTS</a>
+          <a href="gallery.html">GALLERY</a>
+          <a href="about.html">ABOUT</a>
+          <a href="contact.html">CONTACT</a>
+        </div>
+        <button id="menu-toggle" class="menu-btn" aria-expanded="false">☰</button>
+      </nav>
+    </div>
+  </header>
+
+  <div id="sidebar-menu" class="sidebar-menu">
+    <button id="close-menu" class="close-btn">✕</button>
+    <nav class="menu-links">
+      <a href="index.html" class="menu-link">HOME</a>
+      <a href="rooms.html" class="menu-link">ROOMS & SUITES</a>
+      <a href="dining.html" class="menu-link">DINING</a>
+      <a href="amenities.html" class="menu-link">AMENITIES</a>
+      <a href="events.html" class="menu-link">EVENTS</a>
+      <a href="gallery.html" class="menu-link">GALLERY</a>
+      <a href="about.html" class="menu-link">ABOUT</a>
+      <a href="contact.html" class="menu-link">CONTACT</a>
+    </nav>
+  </div>
+
+  <div class="page-wrapper">
+    <main class="container page-top" id="main-content">
+      
+      <section class="hero" style="position: relative; overflow: hidden;">
+        <div class="carousel-container" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1;">
+          <img src="./images/events/hotel wedding.jpg" alt="Wedding ceremony and celebration" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+          <img src="images/carousel-events-corporate.jpg" alt="Corporate gala event" style="width: 100%; height: 100%; object-fit: cover; display: none;">
+          <img src="images/carousel-events-ballroom.jpg" alt="Grand ballroom setup" style="width: 100%; height: 100%; object-fit: cover; display: none;">
+          <img src="images/carousel-events-reception.jpg" alt="Elegant reception setup" style="width: 100%; height: 100%; object-fit: cover; display: none;">
+          <img src="images/carousel-events-outdoor.jpg" alt="Outdoor terrace garden event" style="width: 100%; height: 100%; object-fit: cover; display: none;">
+          <button class="carousel-prev" onclick="changeSlide(-1)" style="position: absolute; left: 10px; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: white; border: none; padding: 15px 20px; cursor: pointer; border-radius: 4px; font-size: 18px; z-index: 3;">&lt;</button>
+          <button class="carousel-next" onclick="changeSlide(1)" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: white; border: none; padding: 15px 20px; cursor: pointer; border-radius: 4px; font-size: 18px; z-index: 3;">&gt;</button>
+        </div>
+        <div class="hero-content" style="position: relative; z-index: 2;">
+          <h1>EVENTS & CELEBRATIONS</h1>
+          <p>Create Unforgettable Moments</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Exceptional Event Hosting</h2>
+        <p style="font-size: 1.2rem; margin: 20px 0 40px; line-height: 1.9; color: #555;">The Grandeur Hotel offers the perfect venue for weddings, corporate events, celebrations, and special occasions. Our expert event planning team ensures every detail is executed flawlessly.</p>
+        
+        <div class="grid">
+          <div class="grid-item">
+            <h3>💒 Wedding Celebrations</h3>
+            <img src="images/event-wedding-reception.jpg" alt="Elegant wedding reception setup" style="width: 100%; height: auto; margin: 10px 0; border-radius: 8px;">
+            <p><strong>Capacity: Up to 500 guests</strong><br><br>
+            Create your dream wedding with our comprehensive planning services. From intimate ceremonies to grand receptions, we provide elegant venues, world-class catering, and personalized coordination for your special day.</p>
+          </div>
+          <div class="grid-item">
+            <h3>🎉 Corporate Events</h3>
+            <img src="images/event-corporate-gala.jpg" alt="Corporate gala dinner event" style="width: 100%; height: auto; margin: 10px 0; border-radius: 8px;">
+            <p><strong>Capacity: 20 to 1,000 guests</strong><br><br>
+            Host successful conferences, product launches, gala dinners, and team building events. Professional audio-visual equipment, breakout rooms, and catering services included.</p>
+          </div>
+          <div class="grid-item">
+            <h3>🎂 Private Celebrations</h3>
+            <img src="images/event-birthday-celebration.jpg" alt="Private birthday celebration" style="width: 100%; height: auto; margin: 10px 0; border-radius: 8px;">
+            <p><strong>Birthday Parties, Anniversaries & More</strong><br><br>
+            Celebrate life's milestones in style. Our dedicated team customizes every element to match your vision, from decoration to entertainment and dining experiences.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alternate">
+        <h2>Flexible Event Spaces</h2>
+        
+        <div class="grid">
+          <div class="grid-item">
+            <h3>🏛️ Grand Ballroom</h3>
+            <img src="images/venue-grand-ballroom.jpg" alt="Grand ballroom with chandeliers" style="width: 100%; height: auto; margin: 10px 0; border-radius: 8px;">
+            <p>Elegant 2,500 m² space with soaring ceilings, chandeliers, and flexible configurations. Perfect for large galas, receptions, and product launches accommodating up to 500 guests.</p>
+          </div>
+          <div class="grid-item">
+            <h3>🎭 Prestige Hall</h3>
+            <img src="images/venue-prestige-hall.jpg" alt="Prestige Hall conference space" style="width: 100%; height: auto; margin: 10px 0; border-radius: 8px;">
+            <p>Sophisticated 1,200 m² hall with modern amenities and customizable layouts. Ideal for conferences, banquets, and formal events for 150-300 guests.</p>
+          </div>
+          <div class="grid-item">
+            <h3>🏞️ Terrace Garden</h3>
+            <img src="images/venue-terrace-garden.jpg" alt="Outdoor terrace garden venue" style="width: 100%; height: auto; margin: 10px 0; border-radius: 8px;">
+            <p>Stunning outdoor venue overlooking the city skyline. Perfect for outdoor ceremonies, cocktail receptions, and garden celebrations with elegant awning coverage.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Comprehensive Services</h2>
+        
+        <div class="grid">
+          <div class="grid-item">
+            <h3>📋 Event Planning</h3>
+            <p>Dedicated event manager guides you through every detail including theme, layout, timeline, and logistics. We handle vendor coordination and on-day management.</p>
+          </div>
+          <div class="grid-item">
+            <h3>🍽️ Catering Excellence</h3>
+            <p>Michelin-starred chefs create custom menus with wine pairings, dietary accommodations, and signature cocktails. Professional service staff ensures flawless execution.</p>
+          </div>
+          <div class="grid-item">
+            <h3>🎵 Entertainment & AV</h3>
+            <p>Professional sound systems, lighting, projection equipment, and live entertainment options. DJ services, live bands, and audio-visual production available.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alternate">
+        <h2>Additional Event Support</h2>
+        
+        <div class="grid">
+          <div class="grid-item">
+            <h3>🎨 Décor & Styling</h3>
+            <p>Professional floral arrangements, custom decorations, and themed styling services. Our design team transforms your vision into reality.</p>
+          </div>
+          <div class="grid-item">
+            <h3>🏨 Guest Accommodations</h3>
+            <p>Block room rates available for your guests with special discounts. Dedicated guest services and room assignments managed by our concierge team.</p>
+          </div>
+          <div class="grid-item">
+            <h3>📸 Photography Services</h3>
+            <p>Professional photographers and videographers capture your special moments. Digital galleries, albums, and custom editing services available.</p>
+          </div>
+        </div>
+      </section>
+
+    </main>
+    <footer class="footer">
+      <div class="footer-content">
+        <p>&copy; 2024 The Grandeur Hotel. All rights reserved.</p>
+        <p>For reservations and inquiries, contact us at +1 (212) 555-7500 or reserve@grandeur.hotel</p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/menu.js"></script>
+</body>
+</html>

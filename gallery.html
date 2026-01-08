@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Gallery — The Grandeur Hotel</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <header class="header" role="banner">
+    <div class="nav-inner">
+      <a href="index.html" class="logo" aria-label="The Grandeur Hotel home">
+        THE GRANDEUR
+      </a>
+      <nav role="navigation">
+        <div class="nav-links">
+          <a href="index.html">HOME</a>
+          <a href="rooms.html">ROOMS & SUITES</a>
+          <a href="dining.html">DINING</a>
+          <a href="amenities.html">AMENITIES</a>
+          <a href="events.html">EVENTS</a>
+          <a href="gallery.html" class="cta">GALLERY</a>
+          <a href="about.html">ABOUT</a>
+          <a href="contact.html">CONTACT</a>
+        </div>
+        <button id="menu-toggle" class="menu-btn" aria-expanded="false">☰</button>
+      </nav>
+    </div>
+  </header>
+
+  <div id="sidebar-menu" class="sidebar-menu">
+    <button id="close-menu" class="close-btn">✕</button>
+    <nav class="menu-links">
+      <a href="index.html" class="menu-link">HOME</a>
+      <a href="rooms.html" class="menu-link">ROOMS & SUITES</a>
+      <a href="dining.html" class="menu-link">DINING</a>
+      <a href="amenities.html" class="menu-link">AMENITIES</a>
+      <a href="events.html" class="menu-link">EVENTS</a>
+      <a href="gallery.html" class="menu-link">GALLERY</a>
+      <a href="about.html" class="menu-link">ABOUT</a>
+      <a href="contact.html" class="menu-link">CONTACT</a>
+    </nav>
+  </div>
+
+  <div class="page-wrapper">
+    <main class="container page-top" id="main-content">
+      
+      <section class="hero" style="position: relative; overflow: hidden;">
+        <div class="carousel-container" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1;">
+          <img src="images/carousel-gallery-lobby.jpg" alt="Grand lobby showcase" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+          <img src="images/carousel-gallery-suite.jpg" alt="Luxury suite interior" style="width: 100%; height: 100%; object-fit: cover; display: none;">
+          <img src="images/carousel-gallery-dining.jpg" alt="Fine dining venue" style="width: 100%; height: 100%; object-fit: cover; display: none;">
+          <img src="images/carousel-gallery-spa.jpg" alt="Spa and wellness center" style="width: 100%; height: 100%; object-fit: cover; display: none;">
+          <img src="images/carousel-gallery-architecture.jpg" alt="Hotel exterior architecture" style="width: 100%; height: 100%; object-fit: cover; display: none;">
+          <button class="carousel-prev" onclick="changeSlide(-1)" style="position: absolute; left: 10px; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: white; border: none; padding: 15px 20px; cursor: pointer; border-radius: 4px; font-size: 18px; z-index: 3;">&lt;</button>
+          <button class="carousel-next" onclick="changeSlide(1)" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: white; border: none; padding: 15px 20px; cursor: pointer; border-radius: 4px; font-size: 18px; z-index: 3;">&gt;</button>
+        </div>
+        <div class="hero-content" style="position: relative; z-index: 2;">
+          <h1>GALLERY</h1>
+          <p>Visual Showcase of Luxury</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Hotel Interiors</h2>
+        <p style="font-size: 1.2rem; margin: 20px 0 40px; line-height: 1.9; color: #555;">Explore the timeless elegance and sophisticated design of The Grandeur Hotel. Our galleries showcase the refined aesthetics and luxurious ambiance that define our property.</p>
+        
+        <div class="grid">
+          <div class="grid-item">
+            <h3>📸 Lobby & Reception</h3>
+            <img src="images/gallery-lobby-grand.jpg" alt="Grand lobby with chandeliers" style="width: 100%; height: auto; margin: 10px 0; border-radius: 8px;">
+            <p>The stunning grand lobby features soaring ceilings, crystal chandeliers, Italian marble floors, and exquisite contemporary art installations. Our reception area exemplifies luxury and hospitality.</p>
+          </div>
+          <div class="grid-item">
+            <h3>📸 Suite Galleries</h3>
+            <img src="images/gallery-suite-deluxe.jpg" alt="Luxury deluxe room suite" style="width: 100%; height: auto; margin: 10px 0; border-radius: 8px;">
+            <p>View our premium room collections including Deluxe Rooms, Executive Suites, and Presidential Suites. Each gallery showcases the elegant furnishings, modern amenities, and spectacular views.</p>
+          </div>
+          <div class="grid-item">
+            <h3>📸 Dining Venues</h3>
+            <img src="images/gallery-dining-elegant.jpg" alt="Elegant dining venue" style="width: 100%; height: auto; margin: 10px 0; border-radius: 8px;">
+            <p>Discover the ambiance of our award-winning restaurants: Le Prestige, Sakura Zen, and Trattoria Bella Notte. Each venue reflects a unique culinary and design philosophy.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alternate">
+        <h2>Amenities & Facilities</h2>
+        
+        <div class="grid">
+          <div class="grid-item">
+            <h3>📸 Serenity Spa</h3>
+            <img src="images/gallery-spa-treatment.jpg" alt="Luxury spa treatment room" style="width: 100%; height: auto; margin: 10px 0; border-radius: 8px;">
+            <p>Peaceful spa environments featuring treatment rooms, massage pools, sauna, and relaxation lounges. Experience tranquility and rejuvenation in our luxurious wellness center.</p>
+          </div>
+          <div class="grid-item">
+            <h3>📸 Fitness & Pool</h3>
+            <img src="images/gallery-pool-wellness.jpg" alt="Olympic pool and wellness center" style="width: 100%; height: auto; margin: 10px 0; border-radius: 8px;">
+            <p>State-of-the-art fitness center with modern equipment and the Olympic-size heated swimming pool. Beautiful photography capturing wellness and active lifestyle at The Grandeur.</p>
+          </div>
+          <div class="grid-item">
+            <h3>📸 Event Spaces</h3>
+            <img src="images/gallery-event-ballroom.jpg" alt="Event ballroom setup" style="width: 100%; height: auto; margin: 10px 0; border-radius: 8px;">
+            <p>Elegant ballrooms, intimate banquet halls, and stunning outdoor terrace garden venues. Photos showcasing the perfect backdrops for your special celebrations and events.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Guest Experiences</h2>
+        
+        <div class="grid">
+          <div class="grid-item">
+            <h3>📸 Weddings & Celebrations</h3>
+            <p>Beautiful moments from wedding ceremonies, receptions, anniversary celebrations, and milestone events. Elegant tablescape designs and atmospheric venue configurations.</p>
+          </div>
+          <div class="grid-item">
+            <h3>📸 Corporate Events</h3>
+            <p>Professional settings for conferences, product launches, gala dinners, and business functions. Showcase of our capabilities for successful corporate hosting.</p>
+          </div>
+          <div class="grid-item">
+            <h3>📸 Social Gatherings</h3>
+            <p>Memorable moments from guest celebrations, dining experiences, and social events. Candid shots capturing the joy and elegance of celebrations at The Grandeur.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alternate">
+        <h2>Seasonal Collections</h2>
+        
+        <div class="grid">
+          <div class="grid-item">
+            <h3>📸 Winter Elegance</h3>
+            <p>Holiday season collections featuring festive decorations, winter wonderland themes, and elegant seasonal entertainment. Experience the magic of celebrations during winter months.</p>
+          </div>
+          <div class="grid-item">
+            <h3>📸 Spring Renewal</h3>
+            <p>Fresh spring aesthetics showcasing our gardens, outdoor venues, and seasonal updates. Beautiful photography celebrating renewal and blooming elegance.</p>
+          </div>
+          <div class="grid-item">
+            <h3>📸 Summer Breeze</h3>
+            <p>Outdoor entertainment and poolside activities captured during the warm season. Vibrant images of summer celebrations and alfresco dining experiences.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Architecture & Design</h2>
+        
+        <div class="grid">
+          <div class="grid-item">
+            <h3>🏗️ Architectural Excellence</h3>
+            <p>Stunning exterior photography and architectural details highlighting The Grandeur Hotel's iconic facade, classical design elements, and striking presence in the cityscape.</p>
+          </div>
+          <div class="grid-item">
+            <h3>🎨 Interior Design Details</h3>
+            <p>Close-up photography of exquisite design elements: custom lighting fixtures, artistic murals, premium textiles, and decorative installations throughout the hotel.</p>
+          </div>
+          <div class="grid-item">
+            <h3>🌃 City Views</h3>
+            <p>Breathtaking photographs from our rooms and venues showcasing panoramic city views, skyline vistas, and the hotel's prime location in the prestigious district.</p>
+          </div>
+        </div>
+      </section>
+
+    </main>
+    <footer class="footer">
+      <div class="footer-content">
+        <p>&copy; 2024 The Grandeur Hotel. All rights reserved.</p>
+        <p>For reservations and inquiries, contact us at +1 (212) 555-7500 or reserve@grandeur.hotel</p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/menu.js"></script>
+</body>
+</html>

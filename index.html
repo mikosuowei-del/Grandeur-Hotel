@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>The Grandeur Hotel — Luxury Accommodations</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <header class="header" role="banner">
+    <div class="nav-inner">
+      <a href="index.html" class="logo" aria-label="The Grandeur Hotel home">
+        THE GRANDEUR
+      </a>
+      <nav role="navigation">
+        <div class="nav-links">
+          <a href="index.html" class="cta">HOME</a>
+          <a href="rooms.html">ROOMS & SUITES</a>
+          <a href="dining.html">DINING</a>
+          <a href="amenities.html">AMENITIES</a>
+          <a href="events.html">EVENTS</a>
+          <a href="gallery.html">GALLERY</a>
+          <a href="about.html">ABOUT</a>
+          <a href="contact.html">CONTACT</a>
+        </div>
+        <button id="menu-toggle" class="menu-btn" aria-expanded="false">☰</button>
+      </nav>
+    </div>
+  </header>
+
+  <div id="sidebar-menu" class="sidebar-menu">
+    <button id="close-menu" class="close-btn">✕</button>
+    <nav class="menu-links">
+      <a href="index.html" class="menu-link">HOME</a>
+      <a href="rooms.html" class="menu-link">ROOMS & SUITES</a>
+      <a href="dining.html" class="menu-link">DINING</a>
+      <a href="amenities.html" class="menu-link">AMENITIES</a>
+      <a href="events.html" class="menu-link">EVENTS</a>
+      <a href="gallery.html" class="menu-link">GALLERY</a>
+      <a href="about.html" class="menu-link">ABOUT</a>
+      <a href="contact.html" class="menu-link">CONTACT</a>
+    </nav>
+  </div>
+
+  <div class="page-wrapper">
+    <main class="container page-top" id="main-content">
+      
+      <!-- Hero Section -->
+      <section class="hero" style="position: relative; overflow: hidden;">
+        <div class="carousel-container" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1;">
+          <img src="./images/hotel exterior.jpg" alt="Grandeur Hotel exterior" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+          <img src="./images/lobby area.jpg" alt="Luxury lobby area" style="width: 100%; height: 100%; object-fit: cover; display: none;">
+          <img src="./images/room with city view.jpg" alt="Room with city view" style="width: 100%; height: 100%; object-fit: cover; display: none;">
+          <img src="./images/fine dining restaurant.jpg" alt="Fine dining restaurant" style="width: 100%; height: 100%; object-fit: cover; display: none;">
+          <img src="./images/relaxation pool area.jpg" alt="Relaxation pool area" style="width: 100%; height: 100%; object-fit: cover; display: none;">
+          <button class="carousel-prev" onclick="changeSlide(-1)" style="position: absolute; left: 10px; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: white; border: none; padding: 15px 20px; cursor: pointer; border-radius: 4px; font-size: 18px; z-index: 3;">&lt;</button>
+          <button class="carousel-next" onclick="changeSlide(1)" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: white; border: none; padding: 15px 20px; cursor: pointer; border-radius: 4px; font-size: 18px; z-index: 3;">&gt;</button>
+        </div>
+        <div class="hero-content" style="position: relative; z-index: 2;">
+          <h1>THE GRANDEUR</h1>
+          <p>Where Elegance Meets Exceptional Service</p>
+          <a href="rooms.html" class="btn">RESERVE YOUR SUITE</a>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section class="section">
+        <h2>Welcome to Luxury</h2>
+        <p style="font-size: 1.2rem; margin: 20px 0 40px; line-height: 1.9; color: #555;">The Grandeur Hotel represents the pinnacle of luxury hospitality, offering an unparalleled experience of refined elegance and impeccable service. Nestled in the heart of the city's most prestigious district, our five-star property combines classic opulence with contemporary sophistication.</p>
+        
+        <div class="grid">
+          <div class="grid-item">
+            <h3>🏆 Award-Winning Excellence</h3>
+            <p>Recipient of multiple prestigious hospitality awards including Five-Star Diamond Rating, Best Luxury Hotel, and World's Best Guest Service.</p>
+          </div>
+          <div class="grid-item">
+            <h3>✨ Timeless Elegance</h3>
+            <p>Meticulously designed interiors featuring marble, crystal, and fine art from renowned artists. Every detail reflects our commitment to perfection.</p>
+          </div>
+          <div class="grid-item">
+            <h3>🍽️ Culinary Mastery</h3>
+            <p>Three Michelin-starred restaurants and lounges offering world-class cuisine prepared by celebrity chefs and award-winning culinary teams.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Rooms Showcase -->
+      <section class="section alternate">
+        <h2>Extraordinary Accommodations</h2>
+        <p style="margin-bottom: 40px;">Our rooms and suites are sanctuaries of comfort, each uniquely designed with premium furnishings and state-of-the-art technology.</p>
+        
+        <div class="grid">
+          <div class="grid-item">
+            <h3>Deluxe Rooms</h3>
+            <p><strong>48 m² | Premium Views</strong><br><br>
+            Spacious rooms featuring marble bathrooms, premium bedding, climate control, and floor-to-ceiling windows overlooking the city skyline.<br><br>
+            <strong>From $280/night</strong></p>
+          </div>
+          <div class="grid-item">
+            <h3>Executive Suites</h3>
+            <p><strong>72 m² | Separate Living Area</strong><br><br>
+            Refined suites with living room, dining area, work desk, and premium amenities. Includes executive lounge access and personalized concierge service.<br><br>
+            <strong>From $450/night</strong></p>
+          </div>
+          <div class="grid-item">
+            <h3>Presidential Suites</h3>
+            <p><strong>150 m² | Panoramic Views</strong><br><br>
+            Our most luxurious offering with multiple bedrooms, grand living spaces, private dining, spa tub, and 24-hour butler service.<br><br>
+            <strong>From $1,200/night</strong></p>
+          </div>
+        </div>
+        <div style="text-align: center; margin-top: 40px;">
+          <a href="rooms.html" class="btn">EXPLORE ALL ROOM TYPES</a>
+        </div>
+      </section>
+
+      <!-- Dining Section -->
+      <section class="section">
+        <h2>Gastronomic Excellence</h2>
+        <p style="margin-bottom: 40px;">Indulge in world-class dining experiences curated by our acclaimed culinary team and celebrated international chefs.</p>
+        
+        <div class="grid">
+          <div class="grid-item">
+            <h3>🌟 Le Nouveau Monde</h3>
+            <p><strong>Michelin ⭐⭐⭐ | French Cuisine</strong><br><br>
+            Exquisite French fine dining with seasonal menus showcasing the finest ingredients. Chef Michel Beaumont leads our flagship restaurant with innovative technique and classical refinement.</p>
+          </div>
+          <div class="grid-item">
+            <h3>🍤 Umami Sushi Bar</h3>
+            <p><strong>Michelin ⭐⭐ | Japanese Omakase</strong><br><br>
+            Authentic Japanese culinary experience with hand-selected fish from premium suppliers. Our sushi master crafts each piece with artistic precision and traditional technique.</p>
+          </div>
+          <div class="grid-item">
+            <h3>🍝 Trattoria Italiana</h3>
+            <p><strong>Contemporary Italian | Casual Elegance</strong><br><br>
+            Traditional Italian recipes with modern flair. Wood-fired oven pizzas and handmade pastas prepared daily. Wine selection features over 500 Italian labels.</p>
+          </div>
+          <div class="grid-item">
+            <h3>☕ The Grand Lobby Lounge</h3>
+            <p><strong>All-Day Dining | Casual</strong><br><br>
+            Sophisticated lounge serving afternoon tea, light cuisine, and premium cocktails. Live jazz performances nightly create an ambiance of refined elegance.</p>
+          </div>
+          <div class="grid-item">
+            <h3>🥃 The Steakhouse</h3>
+            <p><strong>Classic American | Premium Steaks</strong><br><br>
+            Finest USDA Prime beef aged on-site, paired with our extensive wine collection and classic sides. Private dining rooms available for business dinners.</p>
+          </div>
+          <div class="grid-item">
+            <h3>🍸 Rooftop Bar</h3>
+            <p><strong>Panoramic Views | Craft Cocktails</strong><br><br>
+            50 stories above the city with 360-degree views. Signature cocktails crafted by award-winning mixologists and live entertainment nightly.</p>
+          </div>
+        </div>
+        <div style="text-align: center; margin-top: 40px;">
+          <a href="dining.html" class="btn">VIEW FULL DINING GUIDE</a>
+        </div>
+      </section>
+
+      <!-- Amenities Section -->
+      <section class="section alternate">
+        <h2>World-Class Amenities</h2>
+        <p style="margin-bottom: 40px;">Experience unparalleled facilities designed for your comfort, wellness, and entertainment.</p>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px;">
+          <div style="padding: 25px; background: white; border-radius: 8px; box-shadow: var(--elev-2); border-top: 4px solid var(--gold);">
+            <h4 style="color: var(--accent); margin-bottom: 10px;">🏊 Spa & Wellness</h4>
+            <p>10,000 m² luxury spa with Olympic-sized pool, sauna, steam room, and signature treatments from the world's premier spa brands.</p>
+          </div>
+          <div style="padding: 25px; background: white; border-radius: 8px; box-shadow: var(--elev-2); border-top: 4px solid var(--gold);">
+            <h4 style="color: var(--accent); margin-bottom: 10px;">💪 Fitness Center</h4>
+            <p>State-of-the-art gym with personal trainers, yoga studio, and Peloton bikes. 24-hour access for all guests.</p>
+          </div>
+          <div style="padding: 25px; background: white; border-radius: 8px; box-shadow: var(--elev-2); border-top: 4px solid var(--gold);">
+            <h4 style="color: var(--accent); margin-bottom: 10px;">🎬 Entertainment</h4>
+            <p>Premium cinema, arcade gaming, billiards lounge, and live performance venue hosting international artists.</p>
+          </div>
+          <div style="padding: 25px; background: white; border-radius: 8px; box-shadow: var(--elev-2); border-top: 4px solid var(--gold);">
+            <h4 style="color: var(--accent); margin-bottom: 10px;">📚 Business Center</h4>
+            <p>Fully equipped conference facilities, high-speed internet, and dedicated business support staff available 24/7.</p>
+          </div>
+          <div style="padding: 25px; background: white; border-radius: 8px; box-shadow: var(--elev-2); border-top: 4px solid var(--gold);">
+            <h4 style="color: var(--accent); margin-bottom: 10px;">🚗 Concierge Services</h4>
+            <p>Expert concierge team arranging reservations, tickets, transportation, and personalized experiences throughout the city.</p>
+          </div>
+          <div style="padding: 25px; background: white; border-radius: 8px; box-shadow: var(--elev-2); border-top: 4px solid var(--gold);">
+            <h4 style="color: var(--accent); margin-bottom: 10px;">🛍️ Luxury Boutiques</h4>
+            <p>Curated collection of high-end fashion, jewelry, and specialty shops featuring international luxury brands.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Stats Section -->
+      <section class="section">
+        <h2 style="text-align: center; margin-bottom: 50px;">The Grandeur By Numbers</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 30px; text-align: center;">
+          <div>
+            <div style="font-size: 2.5rem; font-weight: 700; color: var(--gold); margin-bottom: 10px;">450+</div>
+            <p>Luxury Rooms & Suites</p>
+          </div>
+          <div>
+            <div style="font-size: 2.5rem; font-weight: 700; color: var(--gold); margin-bottom: 10px;">8</div>
+            <p>Award-Winning Restaurants</p>
+          </div>
+          <div>
+            <div style="font-size: 2.5rem; font-weight: 700; color: var(--gold); margin-bottom: 10px;">50</div>
+            <p>Event Spaces</p>
+          </div>
+          <div>
+            <div style="font-size: 2.5rem; font-weight: 700; color: var(--gold); margin-bottom: 10px;">5★</div>
+            <p>Quality Rating</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Section -->
+      <section class="section" style="text-align: center; background: linear-gradient(135deg, var(--accent), var(--accent-600)); color: white; padding: 100px 40px;">
+        <h2 style="color: white; margin-bottom: 20px;">Plan Your Perfect Stay</h2>
+        <p style="color: rgba(255, 255, 255, 0.9); margin-bottom: 30px; font-size: 1.2rem;">Reserve your room today and experience the ultimate in luxury hospitality.</p>
+        <a href="rooms.html" class="btn" style="background: var(--gold); color: var(--accent); text-transform: uppercase;">Reserve Now</a>
+      </section>
+
+    </main>
+
+    <footer>
+      <p>&copy; 2024 The Grandeur Hotel. All rights reserved. Excellence in Hospitality Since 1995.</p>
+    </footer>
+  </div>
+
+  <script src="js/menu.js"></script>
+</body>
+</html>

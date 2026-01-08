@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>About — The Grandeur Hotel</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <header class="header" role="banner">
+    <div class="nav-inner">
+      <a href="index.html" class="logo" aria-label="The Grandeur Hotel home">
+        THE GRANDEUR
+      </a>
+      <nav role="navigation">
+        <div class="nav-links">
+          <a href="index.html">HOME</a>
+          <a href="rooms.html">ROOMS & SUITES</a>
+          <a href="dining.html">DINING</a>
+          <a href="amenities.html">AMENITIES</a>
+          <a href="events.html">EVENTS</a>
+          <a href="gallery.html">GALLERY</a>
+          <a href="about.html" class="cta">ABOUT</a>
+          <a href="contact.html">CONTACT</a>
+        </div>
+        <button id="menu-toggle" class="menu-btn" aria-expanded="false">☰</button>
+      </nav>
+    </div>
+  </header>
+
+  <div id="sidebar-menu" class="sidebar-menu">
+    <button id="close-menu" class="close-btn">✕</button>
+    <nav class="menu-links">
+      <a href="index.html" class="menu-link">HOME</a>
+      <a href="rooms.html" class="menu-link">ROOMS & SUITES</a>
+      <a href="dining.html" class="menu-link">DINING</a>
+      <a href="amenities.html" class="menu-link">AMENITIES</a>
+      <a href="events.html" class="menu-link">EVENTS</a>
+      <a href="gallery.html" class="menu-link">GALLERY</a>
+      <a href="about.html" class="menu-link">ABOUT</a>
+      <a href="contact.html" class="menu-link">CONTACT</a>
+    </nav>
+  </div>
+
+  <div class="page-wrapper">
+    <main class="container page-top" id="main-content">
+      
+      <section class="hero" style="position: relative; overflow: hidden;">
+        <div class="carousel-container" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1;">
+          <img src="./images/about/historic heritage.jpg" alt="Historic heritage of The Grandeur" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+          <img src="images/carousel-about-timeline.jpg" alt="Hotel history timeline" style="width: 100%; height: 100%; object-fit: cover; display: none;">
+          <img src="images/carousel-about-team.jpg" alt="Dedicated team members" style="width: 100%; height: 100%; object-fit: cover; display: none;">
+          <img src="images/carousel-about-awards.jpg" alt="Awards and recognition" style="width: 100%; height: 100%; object-fit: cover; display: none;">
+          <img src="images/carousel-about-community.jpg" alt="Community involvement and events" style="width: 100%; height: 100%; object-fit: cover; display: none;">
+          <button class="carousel-prev" onclick="changeSlide(-1)" style="position: absolute; left: 10px; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: white; border: none; padding: 15px 20px; cursor: pointer; border-radius: 4px; font-size: 18px; z-index: 3;">&lt;</button>
+          <button class="carousel-next" onclick="changeSlide(1)" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: white; border: none; padding: 15px 20px; cursor: pointer; border-radius: 4px; font-size: 18px; z-index: 3;">&gt;</button>
+        </div>
+        <div class="hero-content" style="position: relative; z-index: 2;">
+          <h1>ABOUT THE GRANDEUR</h1>
+          <p>A Legacy of Excellence Since 1928</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Our Story</h2>
+        <p style="font-size: 1.2rem; margin: 20px 0 40px; line-height: 1.9; color: #555;">The Grandeur Hotel stands as an enduring symbol of luxury hospitality and refined elegance. Since our founding in 1928, we have consistently delivered exceptional experiences to discerning travelers from around the world. Our commitment to excellence remains unwavering as we blend timeless sophistication with contemporary innovation.</p>
+        
+        <div class="grid">
+          <div class="grid-item">
+            <h3>🏆 A Century of Excellence</h3>
+            <img src="images/about-heritage-1928.jpg" alt="Historic Grandeur Hotel heritage" style="width: 100%; height: auto; margin: 10px 0; border-radius: 8px;">
+            <p>From our grand opening in 1928 to today, The Grandeur Hotel has maintained its reputation as a premier destination. Over 95 years of providing world-class hospitality, exceptional service, and unforgettable experiences to our distinguished guests.</p>
+          </div>
+          <div class="grid-item">
+            <h3>✨ Commitment to Quality</h3>
+            <img src="images/about-quality-details.jpg" alt="Luxury quality and details" style="width: 100%; height: auto; margin: 10px 0; border-radius: 8px;">
+            <p>Every aspect of our operation reflects our dedication to excellence. From the finest linens and toiletries to expert staff training, we ensure that every guest experience exceeds expectations and creates lasting memories.</p>
+          </div>
+          <div class="grid-item">
+            <h3>🌍 Global Recognition</h3>
+            <img src="images/about-awards-recognition.jpg" alt="Awards and recognition" style="width: 100%; height: auto; margin: 10px 0; border-radius: 8px;">
+            <p>Our accolades include multiple Five-Star Diamond Ratings, Michelin recognition for our restaurants, and numerous international hospitality awards. These honors validate our commitment to maintaining the highest standards.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alternate">
+        <h2>Our Mission & Values</h2>
+        
+        <div class="grid">
+          <div class="grid-item">
+            <h3>Our Mission</h3>
+            <p>To create extraordinary experiences by providing impeccable service, luxurious accommodations, and world-class amenities that exceed the expectations of our guests. We are dedicated to being the preferred choice for discerning travelers seeking authentic luxury.</p>
+          </div>
+          <div class="grid-item">
+            <h3>Our Values</h3>
+            <p><strong>Excellence:</strong> Pursuing perfection in all we do. <strong>Integrity:</strong> Acting ethically and transparently. <strong>Hospitality:</strong> Genuine care for our guests' comfort. <strong>Innovation:</strong> Embracing thoughtful change and improvement.</p>
+          </div>
+          <div class="grid-item">
+            <h3>Sustainability</h3>
+            <p>The Grandeur is committed to environmental responsibility and sustainable practices. Our green initiatives include energy efficiency, waste reduction, and community engagement, ensuring we preserve elegance for future generations.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Leadership & Team</h2>
+        
+        <div class="grid">
+          <div class="grid-item">
+            <h3>👔 Executive Leadership</h3>
+            <img src="images/team-leadership-group.jpg" alt="Executive leadership team" style="width: 100%; height: auto; margin: 10px 0; border-radius: 8px;">
+            <p>Our experienced management team brings decades of hospitality expertise. Under visionary leadership, we maintain the highest operational standards while fostering a culture of excellence and guest-focused service.</p>
+          </div>
+          <div class="grid-item">
+            <h3>👥 Dedicated Staff</h3>
+            <img src="images/team-staff-dedication.jpg" alt="Dedicated hotel staff members" style="width: 100%; height: auto; margin: 10px 0; border-radius: 8px;">
+            <p>Our team members are the heart of The Grandeur Hotel. We invest in continuous training and development, ensuring our staff embodies our values and delivers exceptional service. Many team members have been with us for over 20 years.</p>
+          </div>
+          <div class="grid-item">
+            <h3>🎯 Service Excellence</h3>
+            <img src="images/team-service-excellence.jpg" alt="Professional service delivery" style="width: 100%; height: auto; margin: 10px 0; border-radius: 8px;">
+            <p>From housekeeping to concierge, every department is dedicated to exceeding guest expectations. Our staff undergoes rigorous training in hospitality, cultural sensitivity, and personalized service delivery.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alternate">
+        <h2>Awards & Recognition</h2>
+        
+        <div class="grid">
+          <div class="grid-item">
+            <h3>⭐ Prestigious Awards</h3>
+            <p><strong>Five-Star Diamond Rating</strong> - AAA's highest honor | <strong>Best Luxury Hotel</strong> - International Travel Awards | <strong>World's Best Guest Service</strong> - Global Hospitality Association</p>
+          </div>
+          <div class="grid-item">
+            <h3>🍽️ Culinary Recognition</h3>
+            <p><strong>Michelin Three-Star</strong> - Le Prestige | <strong>Michelin Two-Star</strong> - Sakura Zen | <strong>Michelin One-Star</strong> - Trattoria Bella Notte | <strong>Best Hotel Restaurant</strong> - Culinary Excellence Awards</p>
+          </div>
+          <div class="grid-item">
+            <h3>🏅 Industry Honors</h3>
+            <p><strong>Condé Nast Traveler Gold List</strong> | <strong>Luxury Travel Advisor Preferred Hotel</strong> | <strong>Forbes Travel Recommended</strong> | <strong>Best Event Venue</strong> - Wedding & Events Magazines</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Community & Partnerships</h2>
+        
+        <div class="grid">
+          <div class="grid-item">
+            <h3>🤝 Community Involvement</h3>
+            <p>The Grandeur Hotel is committed to supporting the local community through charitable partnerships, educational programs, and cultural sponsorships. We believe in giving back to the neighborhoods we serve.</p>
+          </div>
+          <div class="grid-item">
+            <h3>🌟 Strategic Partnerships</h3>
+            <p>We collaborate with premium brands, luxury retailers, and cultural institutions to provide our guests with exclusive experiences and access to the world's finest offerings.</p>
+          </div>
+          <div class="grid-item">
+            <h3>📚 Guest Education</h3>
+            <p>Through workshops, lectures, and cultural events, The Grandeur serves as a hub for learning and enrichment. Our theater hosts renowned speakers and performers throughout the year.</p>
+          </div>
+        </div>
+      </section>
+
+    </main>
+    <footer class="footer">
+      <div class="footer-content">
+        <p>&copy; 2024 The Grandeur Hotel. All rights reserved.</p>
+        <p>For reservations and inquiries, contact us at +1 (212) 555-7500 or reserve@grandeur.hotel</p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/menu.js"></script>
+</body>
+</html>

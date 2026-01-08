@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Rooms & Suites — The Grandeur Hotel</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="header" role="banner">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">THE GRANDEUR</a>
+      <nav role="navigation">
+        <div class="nav-links">
+          <a href="index.html">HOME</a>
+          <a href="rooms.html" class="cta">ROOMS & SUITES</a>
+          <a href="dining.html">DINING</a>
+          <a href="amenities.html">AMENITIES</a>
+          <a href="events.html">EVENTS</a>
+          <a href="gallery.html">GALLERY</a>
+          <a href="about.html">ABOUT</a>
+          <a href="contact.html">CONTACT</a>
+        </div>
+        <button id="menu-toggle" class="menu-btn">☰</button>
+      </nav>
+    </div>
+  </header>
+
+  <div id="sidebar-menu" class="sidebar-menu">
+    <button id="close-menu" class="close-btn">✕</button>
+    <nav class="menu-links">
+      <a href="index.html" class="menu-link">HOME</a>
+      <a href="rooms.html" class="menu-link">ROOMS & SUITES</a>
+      <a href="dining.html" class="menu-link">DINING</a>
+      <a href="amenities.html" class="menu-link">AMENITIES</a>
+      <a href="events.html" class="menu-link">EVENTS</a>
+      <a href="gallery.html" class="menu-link">GALLERY</a>
+      <a href="about.html" class="menu-link">ABOUT</a>
+      <a href="contact.html" class="menu-link">CONTACT</a>
+    </nav>
+  </div>
+
+  <div class="page-wrapper">
+    <main class="container page-top">
+      
+      <section class="hero" style="position: relative; overflow: hidden;">
+        <div class="carousel-container" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1;">
+          <img src="./images/rooms/deluxe room bedroom.jpg" alt="Deluxe room bedroom" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+          <img src="./images/rooms/deluxe room bathroom.jpg" alt="Deluxe room bathroom" style="width: 100%; height: 100%; object-fit: cover; display: none;">
+          <img src="./images/rooms/executive suite living area.jpg" alt="Executive suite living area" style="width: 100%; height: 100%; object-fit: cover; display: none;">
+          <img src="./images/rooms/executive suite bedroom.jpg" alt="Executive suite bedroom" style="width: 100%; height: 100%; object-fit: cover; display: none;">
+          <img src="./images/rooms/presidential suite panoramic view.jpg" alt="Presidential suite panoramic view" style="width: 100%; height: 100%; object-fit: cover; display: none;">
+          <button class="carousel-prev" onclick="changeSlide(-1)" style="position: absolute; left: 10px; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: white; border: none; padding: 15px 20px; cursor: pointer; border-radius: 4px; font-size: 18px; z-index: 3;">&lt;</button>
+          <button class="carousel-next" onclick="changeSlide(1)" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: white; border: none; padding: 15px 20px; cursor: pointer; border-radius: 4px; font-size: 18px; z-index: 3;">&gt;</button>
+        </div>
+        <div class="hero-content" style="position: relative; z-index: 2;">
+          <h1>ROOMS & SUITES</h1>
+          <p>Luxury Accommodations Designed for Your Comfort</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Our Room Categories</h2>
+        <p style="margin-bottom: 40px;">Each room is a personal sanctuary featuring premium furnishings, modern technology, and stunning views of the city.</p>
+        
+        <div class="grid">
+          <div class="grid-item">
+            <h3>DELUXE ROOMS</h3>
+            <p><strong>48 m² | Up to 2 Guests</strong><br><br>
+            <strong>Features:</strong><br>
+            • King or twin beds with premium Egyptian cotton linens<br>
+            • Marble-clad ensuite bathrooms<br>
+            • Flat-screen TV with streaming services<br>
+            • Work desk and high-speed internet<br>
+            • Climate control and soundproofing<br>
+            • Floor-to-ceiling windows<br>
+            • Daily housekeeping<br>
+            • Complimentary toiletries by luxury brands<br><br>
+            <strong style="color: var(--gold); font-size: 1.3rem;">From $280/night</strong></p>
+          </div>
+          <div class="grid-item">
+            <h3>JUNIOR SUITES</h3>
+            <p><strong>60 m² | Up to 2 Guests</strong><br><br>
+            <strong>Features:</strong><br>
+            • Separate living and sleeping areas<br>
+            • Premium bedding and furnishings<br>
+            • Full bathroom with spa tub and rainfall shower<br>
+            • Kitchenette with mini bar<br>
+            • Work/dining area<br>
+            • Smart room technology<br>
+            • Robes and premium toiletries<br>
+            • Priority restaurant reservations<br><br>
+            <strong style="color: var(--gold); font-size: 1.3rem;">From $380/night</strong></p>
+          </div>
+          <div class="grid-item">
+            <h3>EXECUTIVE SUITES</h3>
+            <p><strong>72 m² | Up to 3 Guests</strong><br><br>
+            <strong>Features:</strong><br>
+            • Spacious living room with sofa and entertainment system<br>
+            • Master bedroom with premium bedding<br>
+            • Dining area with seating for 4<br>
+            • Full bar and refrigerator<br>
+            • Executive lounge access<br>
+            • Personalized concierge service<br>
+            • Priority reservations and bookings<br>
+            • Turndown service daily<br><br>
+            <strong style="color: var(--gold); font-size: 1.3rem;">From $450/night</strong></p>
+          </div>
+          <div class="grid-item">
+            <h3>GRAND SUITES</h3>
+            <p><strong>100 m² | Up to 4 Guests</strong><br><br>
+            <strong>Features:</strong><br>
+            • Elegant living room with premium furnishings<br>
+            • Two separate bedrooms with king beds<br>
+            • Grand marble bathrooms (x2)<br>
+            • Full kitchen with appliances<br>
+            • Private dining room<br>
+            • Separate powder room<br>
+            • Premium butler service<br>
+            • Complimentary room upgrades<br><br>
+            <strong style="color: var(--gold); font-size: 1.3rem;">From $650/night</strong></p>
+          </div>
+          <div class="grid-item">
+            <h3>PRESIDENTIAL SUITE</h3>
+            <p><strong>150 m² | Up to 5 Guests</strong><br><br>
+            <strong>Features:</strong><br>
+            • Grand living room with panoramic views<br>
+            • Master bedroom suite with dressing room<br>
+            • Two additional bedrooms<br>
+            • Private spa tub and sauna<br>
+            • Full gourmet kitchen<br>
+            • Private dining room for 10<br>
+            • 24-hour personal butler service<br>
+            • Private elevator access<br><br>
+            <strong style="color: var(--gold); font-size: 1.3rem;">From $1,200/night</strong></p>
+          </div>
+          <div class="grid-item">
+            <h3>THE ROYAL PENTHOUSE</h3>
+            <p><strong>200 m² | Up to 6 Guests</strong><br><br>
+            <strong>Features:</strong><br>
+            • Triple-height ceilings with panoramic views<br>
+            • Master suite with separate dressing room<br>
+            • Three additional luxury bedrooms<br>
+            • Private spa with sauna and steam room<br>
+            • Grand living and entertaining spaces<br>
+            • Executive kitchen with chef<br>
+            • Private rooftop terrace (50 m²)<br>
+            • 24/7 dedicated staff<br><br>
+            <strong style="color: var(--gold); font-size: 1.3rem;">From $2,500/night</strong></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alternate">
+        <h2>Room Amenities & Services</h2>
+        <p style="margin-bottom: 30px;">All rooms and suites feature comprehensive amenities designed for comfort and convenience.</p>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px;">
+          <div style="padding: 25px; background: white; border-radius: 8px; box-shadow: var(--elev-2); border-left: 5px solid var(--gold);">
+            <h4 style="color: var(--accent); margin-bottom: 10px;">Premium Bedding</h4>
+            <p>Egyptian cotton sheets (1000+ thread count), down pillows, and memory foam mattresses from premium manufacturers.</p>
+          </div>
+          <div style="padding: 25px; background: white; border-radius: 8px; box-shadow: var(--elev-2); border-left: 5px solid var(--gold);">
+            <h4 style="color: var(--accent); margin-bottom: 10px;">Technology</h4>
+            <p>Smart TV, streaming services, high-speed WiFi, Bluetooth speakers, and fully compatible mobile device integration.</p>
+          </div>
+          <div style="padding: 25px; background: white; border-radius: 8px; box-shadow: var(--elev-2); border-left: 5px solid var(--gold);">
+            <h4 style="color: var(--accent); margin-bottom: 10px;">Bathroom Luxuries</h4>
+            <p>Rainfall showers, spa tubs, heated floors, premium toiletries, robes, slippers, and complimentary skincare products.</p>
+          </div>
+          <div style="padding: 25px; background: white; border-radius: 8px; box-shadow: var(--elev-2); border-left: 5px solid var(--gold);">
+            <h4 style="color: var(--accent); margin-bottom: 10px;">Dining & Beverages</h4>
+            <p>In-room dining 24/7, premium mini bar, complimentary coffee and tea service, and butler service for penthouse guests.</p>
+          </div>
+          <div style="padding: 25px; background: white; border-radius: 8px; box-shadow: var(--elev-2); border-left: 5px solid var(--gold);">
+            <h4 style="color: var(--accent); margin-bottom: 10px;">Concierge Services</h4>
+            <p>City guide services, restaurant reservations, theater tickets, transportation arrangements, and special requests.</p>
+          </div>
+          <div style="padding: 25px; background: white; border-radius: 8px; box-shadow: var(--elev-2); border-left: 5px solid var(--gold);">
+            <h4 style="color: var(--accent); margin-bottom: 10px;">Security & Safety</h4>
+            <p>24-hour security, in-room safes, card-key entry, CCTV monitoring, and secure parking facilities.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Special Room Packages</h2>
+        <p style="margin-bottom: 40px;">Customize your stay with our curated packages designed for different occasions and preferences.</p>
+        
+        <div class="grid">
+          <div class="grid-item">
+            <h3>🎉 Celebration Package</h3>
+            <p>Champagne, rose petals, romantic dinner setup, and spa credit. Perfect for anniversaries and special occasions.</p>
+          </div>
+          <div class="grid-item">
+            <h3>💼 Business Elite</h3>
+            <p>Premium suite, executive lounge access, business services, and priority restaurant reservations for corporate stays.</p>
+          </div>
+          <div class="grid-item">
+            <h3>🌙 Wellness Retreat</h3>
+            <p>Suite upgrade, spa credit, yoga classes, healthy meal options, and wellness concierge for rejuvenation.</p>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <p>&copy; 2024 The Grandeur Hotel. All rights reserved. Excellence in Hospitality Since 1995.</p>
+    </footer>
+  </div>
+
+  <script src="js/menu.js"></script>
+</body>
+</html>

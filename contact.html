@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Contact — The Grandeur Hotel</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="header" role="banner">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">THE GRANDEUR</a>
+      <nav role="navigation">
+        <div class="nav-links">
+          <a href="index.html">HOME</a>
+          <a href="rooms.html">ROOMS & SUITES</a>
+          <a href="dining.html">DINING</a>
+          <a href="amenities.html">AMENITIES</a>
+          <a href="events.html">EVENTS</a>
+          <a href="gallery.html">GALLERY</a>
+          <a href="about.html">ABOUT</a>
+          <a href="contact.html" class="cta">CONTACT</a>
+        </div>
+        <button id="menu-toggle" class="menu-btn">☰</button>
+      </nav>
+    </div>
+  </header>
+
+  <div id="sidebar-menu" class="sidebar-menu">
+    <button id="close-menu" class="close-btn">✕</button>
+    <nav class="menu-links">
+      <a href="index.html" class="menu-link">HOME</a>
+      <a href="rooms.html" class="menu-link">ROOMS & SUITES</a>
+      <a href="dining.html" class="menu-link">DINING</a>
+      <a href="amenities.html" class="menu-link">AMENITIES</a>
+      <a href="events.html" class="menu-link">EVENTS</a>
+      <a href="gallery.html" class="menu-link">GALLERY</a>
+      <a href="about.html" class="menu-link">ABOUT</a>
+      <a href="contact.html" class="menu-link">CONTACT</a>
+    </nav>
+  </div>
+
+  <div class="page-wrapper">
+    <main class="container page-top">
+      
+      <section class="hero">
+        <div class="hero-content">
+          <h1>CONTACT US</h1>
+          <p>We're Here to Serve You</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Get In Touch</h2>
+        <p style="margin-bottom: 40px;">Whether you have questions about reservations, events, dining, or general inquiries, our team is ready to assist.</p>
+        
+        <div class="grid">
+          <div class="grid-item">
+            <h3> Address</h3>
+            <p>The Grandeur Hotel<br>
+            1247 Prestige Boulevard<br>
+            Manhattan, NY 10111<br><br>
+            <strong>GPS Coordinates:</strong><br>
+            40.7580° N, 73.9855° W</p>
+          </div>
+          <div class="grid-item">
+            <h3>📞 Reservations</h3>
+            <p><strong>Main Line:</strong> +1 (212) 555-7500<br>
+            <strong>Toll Free:</strong> 1-800-GRANDEUR<br>
+            <strong>International:</strong> +1 (212) 555-7501<br><br>
+            <em>Available 24/7 for all booking requests</em></p>
+          </div>
+          <div class="grid-item">
+            <h3>📧 Email</h3>
+            <p><strong>Reservations:</strong> reserve@grandeur.hotel<br>
+            <strong>General Inquiries:</strong> info@grandeur.hotel<br>
+            <strong>Events & Weddings:</strong> events@grandeur.hotel<br>
+            <strong>Dining:</strong> dining@grandeur.hotel</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alternate">
+        <h2>Reservation Form</h2>
+        <p style="margin-bottom: 30px;">Complete this form and we'll get back to you within 2 hours during business hours.</p>
+        
+        <form style="max-width: 700px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 25px;">
+          <div class="form-group">
+            <label for="name">Full Name *</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="phone">Phone Number *</label>
+            <input type="tel" id="phone" name="phone" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="checkin">Check-In Date *</label>
+            <input type="date" id="checkin" name="checkin" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="checkout">Check-Out Date *</label>
+            <input type="date" id="checkout" name="checkout" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="guests">Number of Guests *</label>
+            <select id="guests" name="guests" required>
+              <option value="">-- Select --</option>
+              <option value="1">1 Guest</option>
+              <option value="2">2 Guests</option>
+              <option value="3">3 Guests</option>
+              <option value="4">4 Guests</option>
+              <option value="5+">5+ Guests</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label for="roomtype">Room Type *</label>
+            <select id="roomtype" name="roomtype" required>
+              <option value="">-- Select --</option>
+              <option value="deluxe">Deluxe Room</option>
+              <option value="junior">Junior Suite</option>
+              <option value="executive">Executive Suite</option>
+              <option value="grand">Grand Suite</option>
+              <option value="presidential">Presidential Suite</option>
+              <option value="penthouse">Royal Penthouse</option>
+            </select>
+          </div>
+          
+          <div class="form-group" style="grid-column: 1 / -1;">
+            <label for="message">Special Requests</label>
+            <textarea id="message" name="message"></textarea>
+          </div>
+          
+          <div class="form-group" style="grid-column: 1 / -1;">
+            <button type="submit">SUBMIT RESERVATION REQUEST</button>
+          </div>
+        </form>
+      </section>
+
+      <section class="section">
+        <h2>Hours & Services</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+          <div style="padding: 30px; background: white; border-radius: 8px; box-shadow: var(--elev-2); border-top: 4px solid var(--gold);">
+            <h4 style="color: var(--accent); margin-bottom: 15px;">📋 Front Desk</h4>
+            <p>24 hours daily<br>
+            Check-in: 3:00 PM<br>
+            Check-out: 11:00 AM<br>
+            Early check-in/late check-out available upon request</p>
+          </div>
+          <div style="padding: 30px; background: white; border-radius: 8px; box-shadow: var(--elev-2); border-top: 4px solid var(--gold);">
+            <h4 style="color: var(--accent); margin-bottom: 15px;">🍽️ Dining</h4>
+            <p>Le Nouveau Monde: 6:00 PM - 11:00 PM<br>
+            Trattoria Italiana: 11:30 AM - 11:00 PM<br>
+            Rooftop Bar: 5:00 PM - 2:00 AM<br>
+            Room Service: 24 hours</p>
+          </div>
+          <div style="padding: 30px; background: white; border-radius: 8px; box-shadow: var(--elev-2); border-top: 4px solid var(--gold);">
+            <h4 style="color: var(--accent); margin-bottom: 15px;">🏋️ Facilities</h4>
+            <p>Spa & Wellness: 6:00 AM - 11:00 PM<br>
+            Fitness Center: 24 hours<br>
+            Swimming Pool: 6:00 AM - 10:00 PM<br>
+            Business Center: 24 hours</p>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <p>&copy; 2024 The Grandeur Hotel. All rights reserved. Excellence in Hospitality Since 1995.</p>
+    </footer>
+  </div>
+
+  <script src="js/menu.js"></script>
+</body>
+</html>

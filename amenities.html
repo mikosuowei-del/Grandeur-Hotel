@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Amenities — The Grandeur Hotel</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <header class="header" role="banner">
+    <div class="nav-inner">
+      <a href="index.html" class="logo" aria-label="The Grandeur Hotel home">
+        THE GRANDEUR
+      </a>
+      <nav role="navigation">
+        <div class="nav-links">
+          <a href="index.html">HOME</a>
+          <a href="rooms.html">ROOMS & SUITES</a>
+          <a href="dining.html">DINING</a>
+          <a href="amenities.html" class="cta">AMENITIES</a>
+          <a href="events.html">EVENTS</a>
+          <a href="gallery.html">GALLERY</a>
+          <a href="about.html">ABOUT</a>
+          <a href="contact.html">CONTACT</a>
+        </div>
+        <button id="menu-toggle" class="menu-btn" aria-expanded="false">☰</button>
+      </nav>
+    </div>
+  </header>
+
+  <div id="sidebar-menu" class="sidebar-menu">
+    <button id="close-menu" class="close-btn">✕</button>
+    <nav class="menu-links">
+      <a href="index.html" class="menu-link">HOME</a>
+      <a href="rooms.html" class="menu-link">ROOMS & SUITES</a>
+      <a href="dining.html" class="menu-link">DINING</a>
+      <a href="amenities.html" class="menu-link">AMENITIES</a>
+      <a href="events.html" class="menu-link">EVENTS</a>
+      <a href="gallery.html" class="menu-link">GALLERY</a>
+      <a href="about.html" class="menu-link">ABOUT</a>
+      <a href="contact.html" class="menu-link">CONTACT</a>
+    </nav>
+  </div>
+
+  <div class="page-wrapper">
+    <main class="container page-top" id="main-content">
+      
+      <section class="hero" style="position: relative; overflow: hidden;">
+        <div class="carousel-container" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1;">
+          <img src="./images/relaxation pool area.jpg" alt="Olympic swimming pool" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+          <img src="images/carousel-amenities-fitness.jpg" alt="State-of-the-art fitness center" style="width: 100%; height: 100%; object-fit: cover; display: none;">
+          <img src="images/carousel-amenities-spa.jpg" alt="Luxury spa treatment room" style="width: 100%; height: 100%; object-fit: cover; display: none;">
+          <img src="images/carousel-amenities-business.jpg" alt="Executive business center" style="width: 100%; height: 100%; object-fit: cover; display: none;">
+          <img src="images/carousel-amenities-theater.jpg" alt="Theater and performance venue" style="width: 100%; height: 100%; object-fit: cover; display: none;">
+          <button class="carousel-prev" onclick="changeSlide(-1)" style="position: absolute; left: 10px; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: white; border: none; padding: 15px 20px; cursor: pointer; border-radius: 4px; font-size: 18px; z-index: 3;">&lt;</button>
+          <button class="carousel-next" onclick="changeSlide(1)" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: white; border: none; padding: 15px 20px; cursor: pointer; border-radius: 4px; font-size: 18px; z-index: 3;">&gt;</button>
+        </div>
+        <div class="hero-content" style="position: relative; z-index: 2;">
+          <h1>AMENITIES</h1>
+          <p>Luxurious Facilities for Your Comfort</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Premium Facilities & Services</h2>
+        <p style="font-size: 1.2rem; margin: 20px 0 40px; line-height: 1.9; color: #555;">Experience unparalleled comfort with our comprehensive range of world-class amenities designed to enhance every aspect of your stay.</p>
+        
+        <div class="grid">
+          <div class="grid-item">
+            <h3>🏊 Olympic-Size Swimming Pool</h3>
+            <img src="images/pool-olympic.jpg" alt="Olympic-size swimming pool" style="width: 100%; height: auto; margin: 10px 0; border-radius: 8px;">
+            <p>Heated indoor pool featuring underwater lighting, fountains, and adjacent sauna facilities. Complimentary swimming lessons and aquatic therapy sessions available.</p>
+          </div>
+          <div class="grid-item">
+            <h3>💪 State-of-the-Art Fitness Center</h3>
+            <img src="images/fitness-center.jpg" alt="Modern fitness center with equipment" style="width: 100%; height: auto; margin: 10px 0; border-radius: 8px;">
+            <p>24-hour fitness facility with personal training services, yoga classes, and specialized equipment. Expert trainers available for customized workout programs.</p>
+          </div>
+          <div class="grid-item">
+            <h3>🧖 Serenity Spa</h3>
+            <img src="images/spa-serene.jpg" alt="Luxury Serenity Spa facilities" style="width: 100%; height: auto; margin: 10px 0; border-radius: 8px;">
+            <p>Full-service luxury spa offering massages, facials, body treatments, and holistic wellness services. Relax in our steam room, sauna, and relaxation lounge.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alternate">
+        <h2>Business & Technology</h2>
+        
+        <div class="grid">
+          <div class="grid-item">
+            <h3>📱 Executive Business Center</h3>
+            <img src="images/business-center.jpg" alt="Executive business center workspace" style="width: 100%; height: auto; margin: 10px 0; border-radius: 8px;">
+            <p>Fully equipped with high-speed internet, conference facilities, private meeting rooms, and administrative support. Available 24/7 for guest convenience.</p>
+          </div>
+          <div class="grid-item">
+            <h3>🌐 High-Speed Connectivity</h3>
+            <img src="images/wifi-tech.jpg" alt="High-speed internet connectivity" style="width: 100%; height: auto; margin: 10px 0; border-radius: 8px;">
+            <p>Complimentary premium Wi-Fi throughout the hotel and suites. Ethernet connectivity available in all rooms for enhanced data security and speed.</p>
+          </div>
+          <div class="grid-item">
+            <h3>📞 Concierge Services</h3>
+            <img src="images/concierge-service.jpg" alt="Professional concierge team" style="width: 100%; height: auto; margin: 10px 0; border-radius: 8px;">
+            <p>Dedicated concierge team available to arrange transportation, restaurant reservations, theater tickets, and personalized services 24/7.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Entertainment & Recreation</h2>
+        
+        <div class="grid">
+          <div class="grid-item">
+            <h3>🎭 Theater & Performance Venue</h3>
+            <img src="images/theater-seating.jpg" alt="Theater venue with stage" style="width: 100%; height: auto; margin: 10px 0; border-radius: 8px;">
+            <p>Intimate 200-seat theater hosting live performances, lectures, and exclusive screenings. Hosting world-class entertainment throughout the year.</p>
+          </div>
+          <div class="grid-item">
+            <h3>🎮 Recreation Lounge</h3>
+            <img src="images/recreation-lounge.jpg" alt="Recreation lounge with billiards" style="width: 100%; height: auto; margin: 10px 0; border-radius: 8px;">
+            <p>Modern gaming area with billiards, darts, and virtual entertainment systems. Perfect for relaxation and social gatherings.</p>
+          </div>
+          <div class="grid-item">
+            <h3>📚 Library & Reading Room</h3>
+            <img src="images/library-reading.jpg" alt="Elegant library and reading room" style="width: 100%; height: auto; margin: 10px 0; border-radius: 8px;">
+            <p>Elegant reading space with extensive book collection, comfortable seating, and quiet atmosphere for study and reflection.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alternate">
+        <h2>Additional Services</h2>
+        
+        <div class="grid">
+          <div class="grid-item">
+            <h3>✈️ Airport Transportation</h3>
+            <img src="images/transport-luxury-car.jpg" alt="Luxury car transportation" style="width: 100%; height: auto; margin: 10px 0; border-radius: 8px;">
+            <p>Complimentary luxury car service to and from major airports. Premium vehicles with professional drivers ensure a smooth arrival and departure.</p>
+          </div>
+          <div class="grid-item">
+            <h3>🚗 Valet Parking</h3>
+            <img src="images/valet-parking.jpg" alt="Professional valet parking service" style="width: 100%; height: auto; margin: 10px 0; border-radius: 8px;">
+            <p>Professional valet parking service available throughout the day and night. Secure underground parking facilities with 24-hour surveillance.</p>
+          </div>
+          <div class="grid-item">
+            <h3>🎁 Concierge Gift Service</h3>
+            <img src="images/gift-flowers.jpg" alt="Gift arrangements and flowers" style="width: 100%; height: auto; margin: 10px 0; border-radius: 8px;">
+            <p>Arrange special gifts, flower arrangements, chocolates, and celebratory items for your loved ones. Same-day delivery available.</p>
+          </div>
+        </div>
+      </section>
+
+    </main>
+    <footer class="footer">
+      <div class="footer-content">
+        <p>&copy; 2024 The Grandeur Hotel. All rights reserved.</p>
+        <p>For reservations and inquiries, contact us at +1 (212) 555-7500 or reserve@grandeur.hotel</p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/menu.js"></script>
+</body>
+</html>
